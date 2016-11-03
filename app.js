@@ -4,9 +4,9 @@ var wechat = require('wechat');
 var app = express();
 
 var config = {
-    token: 'token',
-    appid: 'appid',
-    encodingAESKey: 'encodinAESKey'
+    token: 'chen2momo',
+    appid: 'wxef0ce5031f519532',
+    encodingAESKey: 'uFpF9v7iWERItPZhRwTdvUo0lFXqiwPuiBkcUlPd8MQ'
 };
 
 app.use(express.query());
@@ -47,7 +47,7 @@ app.use('/wechat', wechat(config, function (req, res, next) {
     }
 }));
 
-var server = app.listen(80, function () {
+var server = app.listen(80,"123.206.210.104", function () {
     var host = server.address().address;
     var port = server.address().port;
 
